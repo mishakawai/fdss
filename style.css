@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(funita.jpg);
+    background-size: cover;
+    animation: animate 4s linear infinite;
+}
+
+
+
+.sharingan{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background-color: #eb0101;
+    border-radius: 50%;
+    animation: rotation 3s cubic-bezier(.67,.19,.39,.85) infinite alternate;
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    60%{
+        transform: rotate(-1200deg);
+    }
+   70%{
+        transform: rotate(-1200deg);
+    }
+    100%{
+        transform: rotate(-1600deg);
+    }
+}
+
+.sharingan:after{
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(105, 5, 5, 0.7);
+    animation: sharingan_after 7s linear infinite alternate;
+}
+
+@keyframes sharingan_after{
+    0%{
+        top: 20%;
+        left: 20%;
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        border: 5px solid rgba(105, 5, 5, 0.7);
+    }
+
+    60%{
+        top: 20%;
+        left: 20%;
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        border: 5px solid rgba(105, 5, 5, 0.7);
+    }
+
+    70%{
+        top: 25%;
+        left: 25%;
+        height: 140px;
+        width: 140px;
+        border-radius: 0%;
+        border: 5px solid black;
+        background-color: black;
+    }
+
+    100%{
+        top: 25%;
+        left: 25%;
+        height: 140px;
+        width: 140px;
+        border-radius: 0%;
+        border: 5px solid black;
+        background-color: black;
+    }
+}
+
+.sharingan:hover:after{
+    top: 25%;
+    left: 25%;
+    height: 140px;
+    width: 140px;
+    border-radius: 0%;
+    border: 5px solid black;
+    background-color: black;
+}
+
+.sharingan:before{
+    content: '';
+    position: absolute;
+    top: 39%;
+    left: 39%;
+    width: 35px;
+    height: 35px;
+    z-index: 5;
+    border-radius: 50%;
+    background-color: black;
+    border: 17px solid #eb0101;
+}
+.tomoe{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 135px;
+    z-index: 5;
+    background-color: black;
+    animation: tomoe 7s linear infinite alternate;
+}
+
+@keyframes tomoe{
+    0%{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50px;
+        left: 135px;
+        z-index: 5;
+        background-color: black;
+    }
+    60%{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50px;
+        left: 135px;
+        z-index: 5;
+        background-color: black;
+    }
+    70%{
+        width: 0px;
+        height: 0px;
+        border-radius: 0;
+        background-color: transparent;
+        top: 75px;
+        left: 223px;
+        border-top: 0px;
+        border-bottom: 30px solid transparent;
+        border-left: 60px solid black;
+        border-right: 0px;
+    }
+    100%{
+        width: 0px;
+        height: 0px;
+        border-radius: 0;
+        background-color: transparent;
+        top: 75px;
+        left: 223px;
+        border-top: 0px;
+        border-bottom: 30px solid transparent;
+        border-left: 60px solid black;
+        border-right: 0px;
+    }
+}
+
+.sharingan:hover .tomoe{
+    width: 0px;
+    height: 0px;
+    border-radius: 0;
+    background-color: transparent;
+    top: 75px;
+    left: 223px;
+    border-top: 0px;
+    border-bottom: 30px solid transparent;
+    border-left: 60px solid black;
+    border-right: 0px;
+}
+
+.tomoe4{
+    width: 0px;
+    height: 0px;
+    border-radius: 0%;
+    background-color: transparent;
+    position: absolute;
+    top: 22px;
+    left: 75px;
+    z-index: 5;
+    border-bottom: 57px solid black;
+    border-left: 0px;
+    border-right: 30px solid transparent;
+    animation: tomoe4 7s linear infinite alternate;
+}
+
+@keyframes tomoe4{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    60%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    70%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.sharingan:hover .tomoe2{
+    width: 0px;
+    height: 0px;
+    border-radius: 0%;
+    background-color: transparent;
+    position: absolute;
+    top: 223px;
+    left: 195px;
+    z-index: 5;
+    border-top: 57px solid black;
+    border-left: 30px solid transparent;
+    border-right: 0px;
+    transform: rotate(0deg);
+}
+
+.sharingan:hover .tomoe3{
+    width: 0px;
+    height: 0px;
+    border-radius: 0%;
+    background-color: transparent;
+    position: absolute;
+    top: 195px;
+    left: 20px;
+    z-index: 5;
+    border-right: 57px solid black;
+    border-top: 30px solid transparent;
+    border-bottom: 0px;
+    transform: rotate(0deg);
+}
+
+.tomoe:after{
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 5px;
+    width: 10px;
+    height: 15px;
+    z-index: 5;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 40%;
+    background-color: black;
+    transform: rotate(85deg)skewX(30deg) skewY(30deg);
+    animation: tomoe_after 7s linear infinite alternate;
+}
+
+@keyframes tomoe_after{
+    0%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.tomoe2{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 180px;
+    left: 210px;
+    z-index: 5;
+    background-color: black;
+    transform: rotate(120deg);
+    animation: tomoe2 7s linear infinite alternate;
+}
+
+@keyframes tomoe2{
+    0%{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 180px;
+        left: 210px;
+        z-index: 5;
+        background-color: black;
+        transform: rotate(120deg);
+    }
+    60%{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 180px;
+        left: 210px;
+        z-index: 5;
+        background-color: black;
+        transform: rotate(120deg);
+    }
+    70%{
+        width: 0px;
+        height: 0px;
+        border-radius: 0%;
+        background-color: transparent;
+        position: absolute;
+        top: 223px;
+        left: 195px;
+        z-index: 5;
+        border-top: 57px solid black;
+        border-left: 30px solid transparent;
+        border-right: 0px;
+        transform: rotate(0deg); 
+    }
+    100%{
+        width: 0px;
+        height: 0px;
+        border-radius: 0%;
+        background-color: transparent;
+        position: absolute;
+        top: 223px;
+        left: 195px;
+        z-index: 5;
+        border-top: 57px solid black;
+        border-left: 30px solid transparent;
+        border-right: 0px;
+        transform: rotate(0deg);
+    }
+}
+
+.tomoe2:after{
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 5px;
+    width: 10px;
+    height: 15px;
+    z-index: 5;
+    background-color: black;
+    transform: rotate(85deg) skewX(30deg) skewY(30deg);
+    border-top-left-radius: 40%;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 40%;
+    animation: tomoe2_after 7s linear infinite alternate;
+}
+
+@keyframes tomoe2_after{
+    0%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.tomoe3{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 180px;
+    left: 60px;
+    transform: rotate(240deg);
+    z-index: 5;
+    background-color: black;
+    animation: tomoe3 7s linear infinite alternate;
+}
+
+@keyframes tomoe3{
+    0%{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 180px;
+        left: 60px;
+        transform: rotate(240deg);
+        z-index: 5;
+        background-color: black;
+    }
+    60%{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 180px;
+        left: 60px;
+        transform: rotate(240deg);
+        z-index: 5;
+        background-color: black;
+    }
+    70%{
+        width: 0px;
+        height: 0px;
+        border-radius: 0%;
+        background-color: transparent;
+        position: absolute;
+        top: 195px;
+        left: 20px;
+        z-index: 5;
+        border-right: 57px solid black;
+        border-top: 30px solid transparent;
+        border-bottom: 0px;
+        transform: rotate(0deg);
+    }
+    100%{
+        width: 0px;
+        height: 0px;
+        border-radius: 0%;
+        background-color: transparent;
+        position: absolute;
+        top: 195px;
+        left: 20px;
+        z-index: 5;
+        border-right: 57px solid black;
+        border-top: 30px solid transparent;
+        border-bottom: 0px;
+        transform: rotate(0deg);
+    }
+}
+
+.tomoe3:after{
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 5px;
+    width: 10px;
+    height: 15px;
+    z-index: 5;
+    background-color: black;
+    transform: rotate(85deg) skewX(30deg) skewY(30deg);
+    border-top-left-radius: 40%;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 40%;
+    animation: tomoe3_after 7s linear infinite alternate;
+}
+
+@keyframes tomoe3_after{
+    0%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+
+}
+
+#naruto{
+        background: url(Mobile\ -\ Senran\ no\ Samurai\ Kingdom\ JPN\ -\ Sasuke\ Uchiha.png);
+        width: 60px;
+        height: 80px;
+        animation: run 350ms infinite  steps(7);
+}
+
+@keyframes run{
+    from{ background-position: 0;}
+    to{background-position: -420px;}
+}
